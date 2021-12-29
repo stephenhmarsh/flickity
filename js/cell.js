@@ -27,7 +27,7 @@
 
 'use strict';
 
-var FOCUSABLES_SELECTOR = 'a[href], button, input, textarea, select, details,[tabindex]';
+  var FOCUSABLES_SELECTOR = 'a[href]:not(.invisible-redundant-link), button, input, textarea, select, details, [tabindex]:not(.invisible-redundant-link)';
 
 function Cell( elem, parent ) {
   this.element = elem;
